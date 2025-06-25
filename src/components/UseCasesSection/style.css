@@ -1,0 +1,61 @@
+.usecases-section {
+  padding: 80px 40px;
+  background-color: #f8fbff;
+  text-align: center;
+}
+
+.usecases-section h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.usecases-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.usecases-cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: nowrap; /* ❗ карточки в одну строку */
+  overflow-x: auto;  /* ✅ горизонтальный скролл на мобилках */
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.usecases-cards::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.usecase-card {
+  flex-shrink: 0;
+  background-color: white;
+  border-radius: 16px;
+  width: 272px;
+  height: 280px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.usecase-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.usecase-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.usecase-btn {
+    background-color: #1D98DB;
+    width: 249px;
+    height: 52px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    margin-top: 41px;
+}
