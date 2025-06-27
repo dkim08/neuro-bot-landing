@@ -10,7 +10,6 @@ const IntegrationSection = () => {
         </p>
 
         <div className="integration-steps">
-          {/* Верхняя строка — сами шаги */}
           <div className="step-block">
             <div className="step-title">Создание за пару<br />минут</div>
           </div>
@@ -21,14 +20,8 @@ const IntegrationSection = () => {
             <div className="step-title">Интеграция<br />сразу</div>
           </div>
 
-          {/* Нижняя строка — точки между шагами */}
-          <div className="dots-row">
-            <div className="dot-spacer" />
-            <div className="step-dot" />
-            <div className="dot-spacer" />
-            <div className="step-dot" />
-            <div className="dot-spacer" />
-          </div>
+          <div className="step-dot dot-1" />
+          <div className="step-dot dot-2" />
         </div>
 
         <div className="integration-content">
@@ -37,8 +30,8 @@ const IntegrationSection = () => {
           </div>
           <div className="steps-list">
             <ol>
-              <li>Дайте нейросотруднику имя и опишите его функциональные обязанности и особенности поведения – всё простым языком.</li>
-              <li>Добавьте вашу базу знаний: загрузите документы Word, Excel, PDF.</li>
+              <li>Дайте нейросотруднику имя и опишите его <br></br> функциональные обязанности и <br></br> особенности поведения – всё простым <br></br> языком.</li>
+              <li>Добавьте вашу базу знаний: загрузите <br></br> документы Word, Excel, PDF.</li>
               <li>Моментально подключите свой сервис.</li>
             </ol>
           </div>

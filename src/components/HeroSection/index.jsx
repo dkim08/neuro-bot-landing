@@ -1,4 +1,5 @@
 import './style.css';
+import avatar from '../../assets/avatar.svg'
 
 const HeroSection = () => {
   return (
@@ -10,7 +11,7 @@ const HeroSection = () => {
       </div>
 
       <div className="hero-image">
-        <img src="" alt="" />
+        <img src={avatar} alt="" />
       </div>
     </section>
   );

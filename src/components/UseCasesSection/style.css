@@ -1,11 +1,11 @@
 .usecases-section {
   padding: 80px 40px;
-  background-color: #f8fbff;
+  background-color: #E6EAF4;
   text-align: center;
 }
 
 .usecases-section h2 {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 12px;
 }
 
@@ -19,14 +19,15 @@
   display: flex;
   justify-content: center;
   gap: 24px;
-  flex-wrap: nowrap; /* ❗ карточки в одну строку */
-  overflow-x: auto;  /* ✅ горизонтальный скролл на мобилках */
+  flex-wrap: nowrap;
+  overflow-x: auto;
   padding-bottom: 10px;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .usecases-cards::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
 }
 
 .usecase-card {
@@ -38,24 +39,43 @@
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   text-align: center;
+  text-align: center;
+  position: relative;
 }
 
+
 .usecase-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  width: 224px;
+  margin-top: 50px;
+  margin-bottom: 19px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
 }
 
 .usecase-card p {
   font-size: 16px;
   color: #555;
+  text-align: left;
+  padding: 0 25px;
+  width: 219px ;
 }
 
+
 .usecase-btn {
-    background-color: #1D98DB;
-    width: 249px;
-    height: 52px;
-    border: none;
-    border-radius: 12px;
-    color: white;
-    margin-top: 41px;
+  background-color: #1D98DB;
+  width: 249px;
+  height: 52px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  margin-top: 41px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.usecase-btn:hover {
+  background-color: #1a709e;
 }
