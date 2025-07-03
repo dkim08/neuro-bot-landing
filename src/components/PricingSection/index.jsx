@@ -10,7 +10,7 @@ const plans = [
       'Управление ботами через личный кабинет',
       'Простая настройка: просто напиши инструкцию поведения текстом'
     ],
-    note: 'Отличный выбор для малого бизнеса, консультантов и тестирования идей.'
+    note: 'Отличный выбор для малого бизнеса, консультантов и тестирования идеи.'
   },
   {
     title: 'Business',
@@ -22,7 +22,7 @@ const plans = [
       'Расширенные настройки логики диалогов',
       'Приоритезированная поддержка 24/7'
     ],
-    note: 'Оптимально для интернет-магазинов, сервисных компаний и многоканального бизнеса.'
+    note: 'Оптимально для интернет-магазинов, сервисных компаний и локального бизнеса.'
   },
   {
     title: 'Enterprise',
@@ -46,18 +46,22 @@ const PricingSection = () => {
       <div className="pricing-cards">
         {plans.map((plan, index) => (
           <div className="pricing-card" key={index}>
-            <div className="card-header">
-              <h3>{plan.title}</h3>
-              <p className="subtitle">{plan.subtitle}</p>
-              <p className="price">{plan.price}</p>
+            <div card-body>
+              <div className="card-header">
+                <h3>{plan.title}</h3>
+                <p className="subtitle">{plan.subtitle}</p>
+                <p className="price">{plan.price}</p>
+              </div>
+              <ul className="features">
+                {plan.features.map((feature, idx) => (
+                  <li key={idx}>{feature}</li>
+                ))}
+              </ul>
             </div>
-            <ul className="features">
-              {plan.features.map((feature, idx) => (
-                <li key={idx}>{feature}</li>
-              ))}
-            </ul>
-            <button className="buy-button">Купить</button>
-            <p className="note">{plan.note}</p>
+            <div className='card-action'>
+              <button className="buy-button">Купить</button>
+              <p className="note">{plan.note}</p>
+            </div>
           </div>
         ))}
       </div>

@@ -1,5 +1,5 @@
 .pricing-section {
-  background-color: #e6ecfb;
+  background-color: #DAE0EF;
   padding: 60px 20px;
 }
 
@@ -7,7 +7,6 @@
   text-align: center;
   font-size: 35px;
   font-weight: 700;
-  margin-top: 29px;
   margin-bottom: 40px;
 }
 
@@ -16,7 +15,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  align-items: flex-start;
+  align-items: stretch; 
 }
 
 .pricing-card {
@@ -24,12 +23,16 @@
   border-radius: 12px;
   padding: 24px;
   width: 305px;
-  height: 439px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   box-sizing: border-box;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .card-header h3 {
@@ -58,14 +61,16 @@
   margin-top: 15px;
   margin-bottom: 0;
   font-size: 14px;
-  max-height: 200px;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .features li {
   margin-bottom: 6px;
 }
 
-.card-footer {
+.card-action {
+  
   margin-top: auto;
   display: flex;
   flex-direction: column;
@@ -73,7 +78,7 @@
 }
 
 .buy-button {
-  background-color: #2f9cf1;
+  background-color: #1D98DB;
   color: #fff;
   border: none;
   padding: 10px 0;
@@ -85,7 +90,7 @@
 }
 
 .buy-button:hover {
-  background-color: #1d8ad8;
+  background-color: #1a709e;
 }
 
 .note {

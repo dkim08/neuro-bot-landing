@@ -5,12 +5,14 @@ body {
 }
 
 .header-container {
+  position: relative;
   height: 108px;
-  width: 1308px;
+  width: 100%;
+  max-width: 1308px;
+  padding: 0 16px;
   background-color: white;
   margin: 30px auto;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;

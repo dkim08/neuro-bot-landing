@@ -5,6 +5,7 @@ import FeaturesSection from './components/FeaturesSection';
 import UseCasesSection from './components/UseCasesSection';
 import IntegrationSection from './components/IntegrationSection';
 import PricingSection from './components/PricingSection';
+import FaqSection from './components/FaqSection';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       < UseCasesSection />
       < IntegrationSection />
       < PricingSection />
+      < FaqSection />
     </div>
 
 
