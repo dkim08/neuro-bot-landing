@@ -1,5 +1,4 @@
 import { useState } from "react";
-import arrow-down from './assets/arrow-down.svg';
 import "./style.css";
 
 
