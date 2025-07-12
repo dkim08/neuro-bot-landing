@@ -1,0 +1,27 @@
+.cards-content-section {
+  width: 100%;
+  padding: 70px 0 45px 0;
+  background: #E6EAF4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cards-content-section h2 {
+  color: #ab0101;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-content-section h3 {
+  color: green;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+div {
+  border: 1px solid black;
+}
