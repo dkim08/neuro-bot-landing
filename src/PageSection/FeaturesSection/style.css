@@ -1,3 +1,16 @@
+.futures-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+@media (max-width: 730px) {
+  .futures-cards-container {
+    flex-wrap: wrap;
+  }
+}
+
+
 .features-section {
   padding: 60px 40px;
   background-color: #f8fbff;
@@ -7,8 +20,8 @@
 .features-section h2 {
   font-size: 40px;
   text-align: center;
-  max-width: 459px;
   margin: 0 auto 57px;
+  
 }
 
 .features-container {
@@ -22,41 +35,57 @@
 .feature-card {
   background-color: white;
   border-radius: 16px;
-  padding: 24px;
-  width: 250px;
+  padding: 15px 24px 20px 24px;
+  max-width: 305px;
+  min-height: 289px;
   box-shadow: -3px 8px 25.4px 2px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-left: 47px;
-  margin-right: 47px;
-  margin-bottom: 100px;
+  gap: 22px;
+  margin:57px 44px 0px 44px;
 }
 
 .feature-card-content {
   text-align: center;
+  max-width: 235px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 22px;
 }
 
 .feature-card-content h3 {
-  font-size: 20px;
-  margin: auto;
-  width: 171px;
+  padding: 0;
+  margin: 0;
+  height: 58px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-card-content h5,
+.feature-card-content p {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  /*width: 203px;*/
   text-align: center;
 }
 
-.feature-card-content p {
-  font-size: 16px;
-  color: #555;
-  width: 203px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.feature-card-content h5 {
+  font-weight: 600;
 }
 
 .feature-card button {
-  width: 184px;
-  height: 52px;
+  padding: 14px 39px;
   background-color: #1D98DB;
   border: none;
   border-radius: 12px;

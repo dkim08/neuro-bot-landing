@@ -1,14 +1,18 @@
 .hero {
+  box-sizing: border-box;
+  position: relative; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 100px 118px;
-  max-width: 1308px;
-  margin: 0 auto;
-  background-color: transparent;
+  padding: 100px 0 100px  120px;
+  width: 100%;  
+  margin: 0;
+  /* border: 1px solid green; */
 }
 
+
 .hero-content {
+  /* border: 1px solid purple; */
   max-width: 900px;
 }
 
@@ -44,11 +48,19 @@
   background-color: #1a709e;
 }
 
-.hero-image img {
-  width: 600px;
-  height: 600px;
+.hero-image {
+  /* border: 1px solid red; */
   position: absolute;
-  bottom: -20px;
   right: 0;
+  bottom: 0;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.hero-image img {
+  max-width: 100%;
+
 }
 

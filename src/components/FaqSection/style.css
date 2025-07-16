@@ -43,6 +43,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #333;
+  border-radius: 1px solid black;
 }
 
 .faq-answer {
@@ -53,4 +55,5 @@
 
 .faq-arrow {
   font-size: 16px;
+  color: #333;
 }

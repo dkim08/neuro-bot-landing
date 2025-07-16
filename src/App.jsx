@@ -1,26 +1,26 @@
 import './App.css';
-import Header from './components/Header';
+import Header from './components/Header'
 import HeroSection from './components/HeroSection';
-import FeaturesSection from './components/FeaturesSection';
-import UseCasesSection from './components/UseCasesSection';
+import FeaturesSection from './PageSection/FeaturesSection';
 import IntegrationSection from './components/IntegrationSection';
 import PricingSection from './components/PricingSection';
-import FaqSection from './components/FaqSection';
+import FaqSection from './components/FAQSection';
+import CasesSection from './PageSection/CasesSection'
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
-      < HeroSection />
-      < FeaturesSection />
-      < UseCasesSection />
-      < IntegrationSection />
-      < PricingSection />
-      < FaqSection />
+      <HeroSection />
+      <FeaturesSection />
+      <CasesSection />
+      <IntegrationSection />
+      <PricingSection />
+      <FaqSection />
     </div>
 
 
   );
 }
 
-export default App;
+export default App

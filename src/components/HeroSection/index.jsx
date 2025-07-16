@@ -1,5 +1,5 @@
 import './style.css';
-import avatar from '../../assets/avatar.svg'
+import avatar from '../../../public/assets/avatar.svg'
 
 const HeroSection = () => {
   return (
